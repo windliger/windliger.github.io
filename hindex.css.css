@@ -1,0 +1,167 @@
+html, body{
+    background-color:rgb(241, 230, 220);
+    margin: 0;
+    padding: 0;
+    
+
+}
+.menu{
+    background-color: rgb(218, 134, 134);
+    font-size: 1.2rem;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: rgb(65, 35, 199);
+    display: block;
+    padding: 10px 80px;
+    text-decoration: none;
+}
+.menu li a{
+    /*background-color: rgb(109, 217, 221);
+    border: 10px solid rgb(22, 121, 88);*/
+}
+.menu ul li a:hover{
+    background-color: rgb(48, 206, 206);
+}
+.item1{
+    float: right;
+    
+}
+.menu ul li ul{
+    flex-direction: column;
+    display: flex;
+}
+.menu ul li ul li{
+    display: none;
+}
+.menu ul li ul{
+    position: absolute;
+    background-color: rgb(24, 123, 141);
+}
+.menu ul li:hover>ul>li{
+    display: block;
+}
+
+
+body{
+    width:100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-display: 0;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: dodgerblue;
+    margin-top: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+
+}
+
+.container .card{
+    width: 350px;
+    height:  830px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(206, 26, 26, 0.863);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+ .container .card img{
+    width: 330px;
+    height: 220px;
+ }
+
+ .container .card h3{
+    font-weight: 600;
+ }
+
+ .container .card p{
+    padding: 0 1rem;
+    font-size: 15px;
+    font-weight: 300;
+
+ }
+
+ body h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+.sub{
+    background-color: rgb(139, 173, 212);
+}
+   
+
+.desliz{
+    width: 300px;
+    margin-left:  5%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.desliz ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 10s infinite alternate linear;
+    
+}
+.desliz li {
+    list-style: none;
+    width: 100%;
+
+}
+.desliz img{
+    width: 200px;
+    padding: auto;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    19% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    35% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    55% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    75% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    95% {margin-left: -400%;}
+
+
+}
